@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información de mi Spotify</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Información de mi Spotify</title>
+    </head>
+    <body>
+
+        <header>
+            <nav class="cabecera">
+                <a href="#" class="logo">Spotify: David Cornejo B</a>
+                <!-- LISTA DE TODAS LAS SECCIONES-->
+                <ul class="container-navbar">
+                <li class="background-li"><a href="#home" class="nav-menu-link">INICIO</a></li>
+                <li class="background-li"><a href="#about" class="nav-menu-link">ACERCA DE</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="main" id="principal">
+                <div class="main__text" id="descripcion">
+                    <p id="textoDescripcion"></p>
+                </div>
+                <div class="main__data" id="infoPrincipal">
+                    <h1 id="uriUsuario"></h1>
+                    <h2 id="nombreUsuario"></h2>
+                    <p id="seguidoresUsuario"></p>
+                    <p id="siguiendoUsuario"></p>
+                </div>
+
+                <a href="" id="userImgUrl" class="main__photo">
+                    <img id="imgUsuario" src="" alt="">
+                </a>
+            </section>
+
+            <section class="artists" id="artistasRecientes">
+                <h1>Artistas recientemente escuchados: </h1>
+                <div id="contentArtists">
+
+                </div>
+            </section>
+
+            <section class="playlists" id="playlistsPublicas">
+                <h1>Playlists públicas: </h1>
+                <div id="contentPlaylists">
+
+                </div>
+            </section>
+        </main>
+        
+    </body>
+<script src="./asssets/main.js"></script>
+
 </html>
