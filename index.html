@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <link rel="shortcut icon" href="./images/icons8-spotify-30.png">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Información de mi Spotify</title>
+    </head>
+    <body>
+
+        <header>
+            <nav class="cabecera">
+                <a href="#" class="logo">Spotify: David Cornejo B</a>
+                <!-- LISTA DE TODAS LAS SECCIONES-->
+                <ul class="container-navbar">
+                <li class="background-li"><a href="#principal" class="nav-menu-link">INICIO</a></li>
+                <li class="background-li"><a href="#artistasRecientes" class="nav-menu-link">ARTISTAS RECIENTEMENTE ESCUCHADOS</a></li>
+                <li class="background-li"><a href="#playlistsPublicas" class="nav-menu-link">PLAYLISTS PÚBLICAS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-section">
+            <div class="main__text" id="descripcion">
+                <h3 class="texto-desc" id="textoDescripcion"></h3>
+            </div>
+
+            <section class="main" id="principal">
+                <a href="" id="userImgUrl" class="main__photo">
+                    <img id="imgUsuario" src="" alt="">
+                </a>
+
+                <div class="main__data" id="infoPrincipal">
+                    <div class="text">
+                        <h3>Id Usuario: <h3 class="textUsuario" id="uriUsuario"></h3></h3>
+                    </div>
+                    <div class="text">
+                        <h3>Nombre de usuario: <h3 class="textUsuario" id="nombreUsuario"></h3></h3>
+                    </div>
+                    <div class="text">
+                        <h3>Seguidores: <h3 class="textUsuario" id="seguidoresUsuario"></h3></h3>
+                    </div>
+                    <div class="text">
+                        <h3>Siguiendo: <h3 class="textUsuario" id="siguiendoUsuario"></h3></h3>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="artists" id="artistasRecientes">
+                <h1 class="titulo-section">Artistas recientemente escuchados: </h1>
+                <div class="contenedor-tarjetas" id="contentArtists">
+
+                </div>
+            </section>
+
+            <section class="playlists" id="playlistsPublicas">
+                <h1 class="titulo-section">Playlists públicas: </h1>
+                <div class="contenedor-tarjetas" id="contentPlaylists">
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__div footer__div--primary">
+              <section class="footer__div">
+                <h1 class="footer__title">MIS CONTACTOS</h1>
+                <div class="footer__contact">
+                  <h2>Gmail:</h2>
+                  <p>luisdavidcorbra24@gmail.com</p>
+                </div>
+          
+                <div class="footer__contact">
+                  <h2>Outlook:</h2>
+                  <p>luisdavidcorbra24@hotmail.com</p>
+                </div>
+          
+                <div class="footer__contact">
+                  <h2>Teléfono:</h2>
+                  <p>+593 988372173</p>
+                </div>
+              </section>
+            </div>
+        
+        
+            <div class="footer__div footer__div--secondary">
+              <p>Desarrollado por: Luis David Cornejo B. &copy; Copyright</p>
+            </div>
+            
+          </footer>
+        
+    </body>
+<script src="./asssets/main.js"></script>
+
+</html>
