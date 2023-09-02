@@ -10,13 +10,14 @@ const contentPlaylists = null || document.getElementById('contentPlaylists');
 
 textoDescripcion.innerHTML = 
 `
-Descripcion landing page
+Bienvenido/a a mi Landing Page de información de mi cuenta de Spotify. éste proyecto ha sido desarrollado con la finalidad de consumir la API de Spotify para
+presentar información de usuario como: Id de Usuario, Nombre de Usuario, Número de Seguidores y usuarios a los que sigue, Artistas recientes, Playlists públicas, etc.
 `;
 
 let playlists = [];
 let artists = [];
 
-const urlDatos = 'https://spotify23.p.rapidapi.com/user_profile/?id=monsterberg&playlistLimit=20&artistLimit=10';
+const urlDatos = 'https://spotify23.p.rapidapi.com/user_profile/?id=monsterberg&playlistLimit=20&artistLimit=20';
 
 const options = {
   method: 'GET',
@@ -39,10 +40,10 @@ fetchData(urlDatos)
     .then(datos => {
 
         // DATOS DE USUARIO
-        uriUsuario.innerHTML = `Id de usuario: ${datos.uri}`
-        nombreUsuario.innerHTML = `Nombre de Usuario: ${datos.name}`
-        seguidoresUsuario.innerHTML = `Seguidores: ${datos.followers_count}`;
-        siguiendoUsuario.innerHTML = `Siguiendo: ${datos.following_count}`
+        uriUsuario.innerHTML = datos.uri;
+        nombreUsuario.innerHTML = datos.name;
+        seguidoresUsuario.innerHTML = datos.followers_count;
+        siguiendoUsuario.innerHTML = datos.following_count;
         imgUsuario.src = datos.image_url;
         userImgUrl.href = datos.uri;
 
@@ -74,11 +75,11 @@ fetchData(urlDatos)
         ${artists.map(artist => 
             `
             <a href="${artist.artistUrl}" class="contenedor-tarjetas">
-                <div class="tarjeta-artista">
-                    <div class="artist__photo">
-                        <img id="imgArtista" src="${artist.artistImg}" alt="">
+                <div class="tarjeta">
+                    <div class="tarjeta-photo">
+                        <img class="img-tarjeta" id="imgArtista" src="${artist.artistImg}" alt="">
                     </div>
-                    <h1 id="nombreArtista">${artist.artistName}</h1>
+                    <h1 class="titulo-tarjeta" id="nombreArtista">${artist.artistName}</h1>
                 </div>
             </a>
             `
@@ -90,12 +91,12 @@ fetchData(urlDatos)
         ${playlists.map(playlist => 
             `
             <a href="${playlist.uriPlaylist}" class="contenedor-tarjetas">
-                <div class="tarjeta-playlist">
-                    <div class="playlist__photo">
-                        <img id="imgPlaylist" src="${playlist.imgPlaylist}" alt="">
+                <div class="tarjeta">
+                    <div class="tarjeta-photo">
+                        <img class="img-tarjeta-playlist" id="imgPlaylist" src="${playlist.imgPlaylist}" alt="">
                     </div>
-                    <h1 id="nombrePlaylist">${playlist.namePlaylist}</h1>
-                    <h2 id="ownerPlaylist">${playlist.ownerPlaylist}</h2>
+                    <h2 class="titulo-tarjeta" id="nombrePlaylist">${playlist.namePlaylist}</h2>
+                    <p class="contenido-tarjeta" id="ownerPlaylist">${playlist.ownerPlaylist}</p>
                 </div>
             </a>
             `
