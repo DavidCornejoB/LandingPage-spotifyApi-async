@@ -17,14 +17,14 @@ presentar información de usuario como: Id de Usuario, Nombre de Usuario, Númer
 let playlists = [];
 let artists = [];
 
-const urlDatos = 'https://spotify23.p.rapidapi.com/user_profile/?id=monsterberg&playlistLimit=20&artistLimit=20';
+const urlDatos = 'https://spotify23.p.rapidapi.com/user_profile/?id=monsterberg&playlistLimit=21&artistLimit=8';
 
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '7f9957d316mshe8a676c0e954363p1bb84fjsn6c7ee451e234',
+    'X-RapidAPI-Key': 'b34f09974emshd0ac76bd2f80487p1d8c7bjsnb20d8353cf36',
     'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-  }
+}
 };
 
 function fetchData(url) {
