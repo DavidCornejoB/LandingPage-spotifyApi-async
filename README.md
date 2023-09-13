@@ -4,7 +4,7 @@ Bienvenido/a a mi Landing Page de información de mi cuenta de Spotify. éste pr
 presentar información de usuario como: Id de Usuario, Nombre de Usuario, Número de Seguidores y usuarios a los que sigue, Artistas recientes, Playlists públicas, etc.
 
 # UTILIZACIÓN DE LA API DE SPOTIFY:
-["Enlace de la documentación de la API de Spotify en RapidApi"](https://rapidapi.com/es/Glavier/api/spotify23/)
+["Enlace de la documentación de la API de Spotify en RapidApi"](https://rapidapi.com/es/Glavier/api/spotify23)
 
 Se ha utilizado Fetch para poder consumir la Api. Para empezar, se crea una función (puede ser asíncrona) que reciba la url de la Api y retorne toda la información solicitada.
 
